@@ -1,0 +1,19 @@
+footer {
+	padding-bottom:2%;
+}
+
+footer ul {
+	list-style: none;
+	-webkit-font-smoothing: antialiased;
+	padding: 0;
+	font-family: Futura, "Century Gothic", AppleGothic, sans-serif;
+	font-size: .9rem;
+}
+footer a {
+	color: #ccc;
+	transition: all .05s ease;
+	text-decoration: none;
+}
+ul.horizontal li {
+	display: inline;
+}

@@ -1,0 +1,16 @@
+<nav class="left">
+{% if site.lang == "de" %} {% capture link1 %}{{ site.baseurl_root }}{{ page.url}}{% endcapture %}
+<span>{% t global.german %}</span>&nbsp;
+<a href="{{ link1 }}">{% t global.english %}</a>
+{% elsif site.lang == "en" %} {% capture link2 %}{{ site.baseurl_root }}/de{{page.url}}{% endcapture %}
+<span>{% t global.english %}</span>&nbsp;
+	<a href="{{ link2 }}">{% t global.german %}</a>
+{% endif %}
+</nav>
+<nav class="right">
+	<a class="button-clear" href="/login.html" style="color:white;">Login</a>
+</nav>
+<header>
+<a href="/index.html"><h1>Grabbeltuch</h1></a>
+<h2>Easy Productivity</h2>
+</header>

@@ -1,0 +1,24 @@
+<div>
+	<div class="sectionHeaderSubgrid">
+		{% include {{ include.icon }} color="#fff"  %}
+		<h3>{{include.title}}
+			{% if include.link %}
+				<br>
+
+			{% if include.link contains 'http' %}
+		
+				<a class="button-clear" rel="noopener noreferrer" href="{{include.link}}" target="_blank">Read more</a>
+
+			{% else %}
+
+				<a class="button-clear" href="{{include.link}}">Read more</a>
+
+			{% endif%}
+
+			{% endif %}
+		</h3>
+	</div>
+	<p>
+		 {{include.content}}
+	</p>
+</div>

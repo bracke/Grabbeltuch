@@ -1,0 +1,3 @@
+Contact: security@grabbeltuch.com
+Encryption: https://grabbeltuch.com/pgp-key.txt
+Acknowledgements: https://grabbeltuch.com/acknowledgements.html

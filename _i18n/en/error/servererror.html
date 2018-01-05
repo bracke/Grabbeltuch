@@ -1,0 +1,20 @@
+<div class="error content">
+ <h2>Server Error (#500)</h2>
+  <div>
+      <p>Unfortunately there was an error on the server<br />
+			This is not your fault, but entirely our fault.<br />
+			<br />
+			The error has been logged and will be examined and fixed as soon as possible.<br />
+			<br />
+
+			Meanwhile, perhaps other pages on this site might be of interest:<br /><br />
+	  <p>
+	    <h3>Last blog posts</h3>
+		<ul>
+		   {% for post in site.posts limit: 10 %}
+		   	  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+		  {% endfor %}
+		</ul>
+	  </p>
+  </div>
+</div>

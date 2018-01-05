@@ -1,0 +1,65 @@
+nav {
+	display:block;
+	padding: 1em;
+	background-color: black;
+	border-bottom: 2px solid white;
+	border-left: 2px solid white; 
+}
+.right {
+	border-right:0;
+	border-left: 2px solid white; 
+	position:absolute;
+	right:0;
+	top:0
+}
+.left {
+	border:0;
+	background-color: transparent;
+	position:absolute;
+	left:0;
+	top:0
+}
+nav {
+	text-transform : uppercase;
+}
+nav a {
+	color: white;
+}
+nav span {
+	color: gray;
+}
+
+header {
+	background-color: #ab0068;
+	padding: 18px;
+	padding-top: 60px;
+	color: white;
+	font-family: Futura, "Century Gothic", AppleGothic, sans-serif;
+	font-size: 16px;
+}
+header h1 {
+	color: white;
+	font-family: Futura, "Century Gothic", AppleGothic, sans-serif;
+	font-size: 96px;
+	font-weight: bold;
+	line-height: 96px;
+	margin: 0;
+	text-align: center;
+	text-shadow: rgb(0, 0, 0) 0px -1px 0px, rgba(255, 255, 255, 0.2) 0px 1px 0px;
+	text-transform: uppercase;
+}
+header h2 {
+	color: rgb(226, 229, 233);
+	font-family: Futura, "Century Gothic", AppleGothic, sans-serif;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 36px;
+	margin: 0;
+	margin-bottom: 12px;
+	text-align: center;
+}
+ 
+ h1{
+	white-space: normal;
+	word-wrap:break-word; 	 
+ }

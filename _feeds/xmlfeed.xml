@@ -1,0 +1,23 @@
+---
+exclude_from_search: true
+---
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+	<title>{{ site.root_desc }}</title>
+ 	<link>href="https://grabbeltuch.com/xmlfeed.xml"</link>
+	<lastBuildDate>{{ site.time | date_to_xmlschema }}</lastBuildDate>
+	<pubDate>{{ site.time | date_to_xmlschema }}</pubDate>
+
+	{% for post in site.posts limit:20 %}
+	<item>
+		<title>{{ post.title }}</title>
+		<link>https://grabbeltuch.com{{ post.url }}</link>
+		<updated>{{ post.date | date_to_xmlschema }}</updated>
+		<guid>https://grabbeltuch.com{{ post.url }}</guid>
+		<description>{{ post.content | xml_escape }}</description>
+		<pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+	</item>
+	{% endfor %}
+</channel>
+</rss>

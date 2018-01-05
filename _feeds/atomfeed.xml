@@ -1,0 +1,24 @@
+---
+exclude_from_search: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title type="text" xml:lang="en">{{ site.root_desc }}</title>
+    <link type="application/atom+xml" href="https://grabbeltuch.com/feeds/" rel="self"/>
+    <link type="text" href="https://grabbeltuch.com" rel="alternate"/>
+    <updated>{{ site.time | date_to_xmlschema }}</updated>
+    <id>https://grabbeltuch.com</id>
+    <author>
+        <name>Bent Bracke</name>
+    </author>
+    <rights>Creative Commons Attribution 3.0 License</rights>
+    {% for post in site.posts limit:20 %}
+    <entry>
+        <title>{{ post.title }}</title>
+        <link href="https://grabbeltuch.com{{ post.url }}/"/>
+        <updated>{{ post.date | date_to_xmlschema }}</updated>
+        <id>https://grabbeltuch.com{{ post.url }}/</id>
+        <summary type="html">{{ post.content | xml_escape }}</summary>
+    </entry>
+    {% endfor %}
+</feed>

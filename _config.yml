@@ -1,0 +1,33 @@
+highlighter: "pygments"
+permalink: none
+description: ""
+keywords: ""
+future: true
+main_title: "Grabbeltuch"
+baseurl: ""
+source: .
+destination: ../GeneratedMetaSite
+include: ["scripts",".well-known","outdatedbrowser"]
+languages: ["en","de"]
+exclude_from_localizations: ["scripts","javascript", "images", "styles","humans.txt","pgp-key.txt",".well-known","_posts","_feeds","outdatedbrowser","assets"]
+plugins:
+    - jekyll-minifier
+
+jekyll-minifier:
+  exclude: ["_feeds","assets"] # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
+
+tipue_search:
+  include: 
+    pages: true
+    collections: ["manual", "posts"]
+
+collections:
+  manual:
+   output: true
+  error:
+   output: true
+  feeds:
+   output: true
+
+sass:
+    sass_dir: _sass

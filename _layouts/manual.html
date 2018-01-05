@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+	{% include genericHeadSection.html %}
+</head>
+<body id="home">
+{% include header.html %}
+<div class="manualGrid">
+<aside id="mySidenav" class="sidenav">
+	
+	<h3 class="manual">Manual <a title="Sitesearch" href="/search.html">
+		{% include icons/search-sm.html color="#000" %}
+
+	</a></h3>
+
+{% include navigation.html items=site.manual %}
+</aside>
+<main class="manual" id="main">
+<h2>{{page.title}}</h2>
+{{ content }} 
+</main>
+</div>
+{% include footer.html %}
+{% include outdatedbrowser.html language=site.lang %}
+</body></html>

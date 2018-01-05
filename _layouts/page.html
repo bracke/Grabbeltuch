@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+	{% include genericHeadSection.html %}
+</head>
+<body id="home">
+{% include header.html %}
+<div class="manualGrid">
+<aside class="sidenav">
+{% include navigation.html 
+	items=site.pages %}
+</aside>
+<main class="manual" id="main">
+<h2>{{page.title}}</h2>
+{{ content }} 
+</main>
+</div>
+{% include footer.html %}
+{% include outdatedbrowser.html language=site.lang %}
+</body></html>

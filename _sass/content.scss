@@ -1,0 +1,44 @@
+.manualGrid {
+	display: grid;
+	grid-template-columns: 100%;
+	padding: 0;
+}
+@media only screen and (min-width: 600px) {
+ .manualGrid {
+	display: grid;
+	grid-gap: 1%;
+	grid-template-columns: 14% 85%;
+}
+}
+main.manual, main.blog, main.content {
+
+	background-color : white;
+	color: black;
+	min-height:700px;
+	padding:10px;
+}
+@media only screen and (min-width: 600px) {
+main.manual,main.blog,main.content  {
+
+	background-color : white;
+	color: black;
+	min-height:700px;
+	padding:10px;
+
+}
+}
+main a {
+ color: #ab0068;
+}
+
+.content {
+	padding: 20px;
+}
+.content h2 {
+	color: black;
+}
+
+.content {
+	min-height:700px;
+}
+

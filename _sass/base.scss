@@ -1,0 +1,56 @@
+body{
+	margin:0;
+	padding:0;
+	line-height: 150%;
+	color: white;
+	font-size: 16px;
+	font-family: Futura, "Century Gothic", AppleGothic, sans-serif;
+}
+a, a:hover  {
+	transition: all .05s ease;
+	text-decoration: none;
+ }
+ a:hover {
+	font-weight: bold;
+	text-shadow: 0 0 .0625rem #fff
+ }
+ .button {
+	background-color: #9b4dca;
+	border: 0.1rem solid #9b4dca;
+	border-radius: .4rem;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.1rem;
+	font-weight: 700;
+	height: 3.8rem;
+	letter-spacing: .1rem;
+	line-height: 3.8rem;
+	padding: 0 3.0rem;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+ }
+
+ .button {
+	white-space: normal;
+	word-wrap:break-word; 	 
+ }
+ .button-outline{
+	 background-color:transparent;
+	 color: #9b4dca;
+ }
+ .button-clear {
+	background-color: transparent;
+	border-color: transparent;
+	color:#ab0068;
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	font-weight: 700;
+ }
+ .centeredItem
+ {
+	 display: block;
+	 margin: 10px auto 50px;
+ }

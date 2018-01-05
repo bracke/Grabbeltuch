@@ -1,0 +1,33 @@
+<!-- ============= Outdated Browser ============= -->
+<div id="outdated"></div>
+
+
+<!-- javascript includes -->
+<script src="/outdatedbrowser/outdatedbrowser.min.js"></script>
+
+<!-- plugin call -->
+<script>
+	//event listener form DOM ready
+	function addLoadEvent(func) {
+		var oldonload = window.onload;
+		if (typeof window.onload != 'function') {
+			window.onload = func;
+		} else {
+			window.onload = function () {
+				if (oldonload) {
+					oldonload();
+				}
+				func();
+			}
+		}
+	}
+	//call function after DOM ready
+	addLoadEvent(function () {
+		outdatedBrowser({
+			bgColor: '#f25648',
+			color: '#ffffff',
+			lowerThan: 'grid',
+			languagePath: '/outdatedbrowser/lang/{{include.language}}.html'
+		})
+	});
+</script>

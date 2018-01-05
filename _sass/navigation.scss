@@ -1,0 +1,44 @@
+
+aside {
+	background-color: whitesmoke;
+}
+aside ul {
+	list-style : none;
+	width: 200px;
+	padding-left: 0;
+}
+aside li {
+	color: black;
+	padding : 10px;
+	padding-left: 30px;
+	white-space: wrap;
+	word-wrap: break-word; 
+}
+aside li.active {
+font-weight: bold;
+}
+aside li a {
+	color: black;
+	transition: all .05s ease;
+}
+aside a:hover {
+	transition: all .05s ease;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+h3.manual {
+	color: black;
+	padding-left:30px;
+}
+.documentNavigation
+{
+	background-color: white;
+	color: black;
+}
+.documentNavigation a {
+	color : black;
+}
+.documentNavigation ul {
+	list-style-type: none;
+}

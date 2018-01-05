@@ -1,0 +1,58 @@
+
+section, footer {
+	padding:5% 5% 9% 5%;
+}
+
+.sectionHeaderSubgrid{
+	display: inline-grid;
+	grid-gap: 10px;
+	grid-template-columns: 80px auto;
+	margin-bottom: 20px
+}
+.sectionHeaderSubgrid h3{
+	font-size: 1.5rem;
+	line-height: 1.3em;
+	margin-bottom: 0.3em;
+	margin-top: 0.3em;
+}
+.sectionGrid {
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(1, 100%);
+	padding-top: 30px;
+}
+@media only screen and (min-width: 600px) {
+.sectionGrid { 
+	grid-template-columns: repeat(2, 45%);
+}
+}
+@media only screen and (min-width: 800px) {
+.sectionGrid { 
+	grid-template-columns: repeat(3, 30%);
+}
+}
+@media only screen and (min-width: 1000px) {
+.sectionGrid {
+  grid-template-columns: repeat(4, 23%);
+}
+}
+.sectionGrid p {
+	margin: 0 0 1em;
+}
+
+section {
+	font-size: 1.0625rem;
+	line-height: 1.4
+}
+section h2 {
+	font-size: 3rem;
+	font-weight: 600;
+	margin-bottom: .9rem;
+	line-height: 3rem
+}
+section h3 {
+	font-size: 1.5rem;
+	line-height: 1.3em;
+	margin-bottom: 0.3em;
+	margin-top: 0.3em;
+}

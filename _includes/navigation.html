@@ -1,0 +1,232 @@
+{% assign filtered_items = include.items | where_exp:"item", "item.url != '/assets/tipuesearch/tipuesearch_content.js' " %}
+
+{% assign filtered_items2 = filtered_items | where_exp:"item", "item.url != '/styles/style.css' "
+%}
+
+{% assign sorted_items = filtered_items2 | sort:"order" %}
+
+<ul>
+	{% for apage in sorted_items %}
+		<a href="{{ apage.url }}">
+	<li {% if (page.url == apage.url ) %} class="active" {% endif %}>
+	{{ apage.title }}
+	 {% if page.url == apage.url %}
+	
+	{% if page.url == "/manual/workspace.html" %}
+	<ul>
+		<a href="#introduction">
+			<li>Introduction</li>
+		</a>
+		<a href="#profile">
+			<li>Panels</li>
+		</a>
+		<a href="#profile">
+			<li>Panel: Profile</li>
+		</a>
+		<a href="#documents">
+			<li>Panel: Documents</li>
+		</a>
+		<a href="#calendars">
+			<li>Panel: Calendars</li>
+		</a>
+		<a href="#notes">
+			<li>Panel: Notes</li>
+		</a>
+		<a href="#tasks">
+			<li>Panel: Tasks</li>
+		</a>
+		<a href="#tasks">
+			<li>Panel: Toolbox</li>
+		</a>
+	</ul>
+	{% elsif page.url == "/manual/documents.html" %}
+<ul>
+	<a href="#introduction">
+		<li>Introduction</li>
+	</a>
+	<a href="#finding">
+		<li>Finding Documents</li>
+	</a>
+	<a href="#adding">
+		<li>Adding Documents</li>
+	</a>
+	<a href="#removing">
+		<li>Removing Documents</li>
+	</a>
+	<a href="#viewing">
+		<li>Viewing Document</li>
+	</a>
+	<a href="#editing">
+		<li>Editing Documents</li>
+	</a>
+	<a href="#tagsandprojects">
+		<li>Tags and Projects</li>
+	</a>
+
+	<a href="#documenttypes">
+		<li>Document Types</li>
+	</a>
+
+</ul>
+	{% elsif page.url == "/manual/cloudstorage.html" %}
+<ul>
+	<a href="#introduction">
+		<li>Introduction</li>
+	</a>
+	<a href="#adding">
+		<li>Adding Cloud Storage</li>
+	</a>
+	<a href="#providers">
+		<li>Providers</li>
+	</a>
+	<a href="#expanding">
+		<li>Expanding Space</li>
+	</a>
+	<a href="#removing">
+		<li>Removing Cloud Storage</li>
+	</a>
+	<a href="#movingfiles">
+		<li>Moving Files to a Different Provider</li>
+	</a>
+</ul>
+
+	{% elsif page.url == "/manual/calendars.html" %}
+
+	{% elsif page.url == "/manual/notes.html" %}
+
+		<ul>
+			<a href="#introduction">
+				<li>Introduction</li>
+			</a>
+			<a href="#creating">
+				<li>Creating and editing notes</li>
+			</a>
+			<a href="#markdown">
+				<li>Markdown</li>
+			</a>
+			<a href="#tagsandprojects">
+				<li>Tags and Projects</li>
+			</a>
+			<a href="#sharing">
+				<li>Sharing Notes</li>
+			</a>
+			<a href="#searching">
+				<li>Searching Notes</li>
+			</a>
+		
+		</ul>
+
+	{% elsif page.url == "/manual/tasks.html" %}
+
+<ul>
+	<a href="#introduction">
+		<li>Introduction</li>
+	</a>
+	<a href="#creating">
+		<li>Creating and editing tasks</li>
+	</a>
+	<a href="#subtasks">
+		<li>Subtasks</li>
+	</a>
+	<a href="#tagsandprojects">
+		<li>Tags and Projects</li>
+	</a>
+	<a href="#timetracking">
+		<li>Time tracking on tasks</li>
+	</a>
+	<a href="#searching">
+		<li>Searching tasks</li>
+	</a>
+
+</ul>
+
+	{% elsif page.url == "/manual/crm.html" %}
+
+		<ul>
+			<a href="#introduction">
+				<li>Introduction</li>
+			</a>
+			<!-- 	<a href="#creating">
+						<li>Creating and editing tasks</li>
+					</a>
+					<a href="#subtasks">
+						<li>Subtasks</li>
+					</a>
+					<a href="#tagsandprojects">
+						<li>Tags and Projects</li>
+					</a>
+					<a href="#timetracking">
+						<li>Time tracking on tasks</li>
+					</a>
+					<a href="#searching">
+						<li>Searching tasks</li>
+					</a>
+				-->
+		</ul>
+	{% elsif page.url == "/manual/integrations.html" %}
+
+	<ul>
+		<a href="#introduction">
+			<li>Introduction</li>
+		</a>
+		<a href="#calendars">
+			<li>Calendars</li>
+		</a>
+		<a href="#cloudstorage">
+			<li>Cloud Storage</li>
+		</a>
+		<a href="#emailnotes">
+			<li>Email Notes</li>
+		</a>
+		<a href="#CSVItemImport">
+			<li>CSV Item Import</li>
+		</a>
+		<a href="#CSVItemExport">
+			<li>CSV Item Export</li>
+		</a>
+		<a href="#ItemCreationbyEmail">
+			<li>Item Creation by Email</li>
+		</a>
+	
+	</ul>
+
+	{% elsif page.url == "/manual/csv.html" %}
+
+	{% elsif page.url == "/manual/billing.html" %}
+
+	{% elsif page.url == "/manual/backup.html" %}
+
+	<ul>
+		<a href="#backup">
+			<li>Backup</li>
+		</a>
+		<a href="#documents">
+			<li>Documents</li>
+		</a>
+		<a href="#notes">
+			<li>Notes</li>
+		</a>
+		<a href="#tasks">
+			<li>Tasks</li>
+		</a>
+		<a href="#timesheets">
+			<li>Timesheets</li>
+		</a>
+		<a href="#tagsandprojects">
+			<li>Tags and Projects</li>
+		</a>
+		<a href="#appointments">
+			<li>Appointments</li>
+		</a>
+		<a href="#profileandsettings">
+			<li>Profile and Settings</li>
+		</a>
+	</ul>
+
+	{% elsif page.url == "/manual/faq.html" %}
+
+	{% endif %}
+	{% endif %}
+	</li></a>
+	{% endfor %}
+</ul>
