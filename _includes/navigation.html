@@ -8,11 +8,11 @@
 <ul>
 	{% for apage in sorted_items %}
 		<a href="{{ apage.url }}">
-	<li {% if (page.url == apage.url ) %} class="active" {% endif %}>
+	<li {% if (page.url contains apage.url ) %} class="active" {% endif %}>
 	{{ apage.title }}
-	 {% if page.url == apage.url %}
+	 {% if page.url contains apage.url %}
 	
-	{% if page.url == "/manual/workspace.html" %}
+	{% if page.url contains "/manual/workspace.html" %}
 	<ul>
 		<a href="#introduction">
 			<li>Introduction</li>
@@ -39,7 +39,7 @@
 			<li>Panel: Toolbox</li>
 		</a>
 	</ul>
-	{% elsif page.url == "/manual/documents.html" %}
+	{% elsif page.url contains "/manual/documents.html" %}
 <ul>
 	<a href="#introduction">
 		<li>Introduction</li>
@@ -68,7 +68,7 @@
 	</a>
 
 </ul>
-	{% elsif page.url == "/manual/cloudstorage.html" %}
+	{% elsif page.url contains "/manual/cloudstorage.html" %}
 <ul>
 	<a href="#introduction">
 		<li>Introduction</li>
@@ -90,9 +90,9 @@
 	</a>
 </ul>
 
-	{% elsif page.url == "/manual/calendars.html" %}
+	{% elsif page.url contains "/manual/calendars.html" %}
 
-	{% elsif page.url == "/manual/notes.html" %}
+	{% elsif page.url contains "/manual/notes.html" %}
 
 		<ul>
 			<a href="#introduction">
@@ -116,7 +116,7 @@
 		
 		</ul>
 
-	{% elsif page.url == "/manual/tasks.html" %}
+	{% elsif page.url contains "/manual/tasks.html" %}
 
 <ul>
 	<a href="#introduction">
@@ -140,7 +140,7 @@
 
 </ul>
 
-	{% elsif page.url == "/manual/crm.html" %}
+	{% elsif page.url contains "/manual/crm.html" %}
 
 		<ul>
 			<a href="#introduction">
@@ -163,7 +163,7 @@
 					</a>
 				-->
 		</ul>
-	{% elsif page.url == "/manual/integrations.html" %}
+	{% elsif page.url contains "/manual/integrations.html" %}
 
 	<ul>
 		<a href="#introduction">
@@ -190,11 +190,11 @@
 	
 	</ul>
 
-	{% elsif page.url == "/manual/csv.html" %}
+	{% elsif page.url contains "/manual/csv.html" %}
 
-	{% elsif page.url == "/manual/billing.html" %}
+	{% elsif page.url contains "/manual/billing.html" %}
 
-	{% elsif page.url == "/manual/backup.html" %}
+	{% elsif page.url contains "/manual/backup.html" %}
 
 	<ul>
 		<a href="#backup">
@@ -223,7 +223,7 @@
 		</a>
 	</ul>
 
-	{% elsif page.url == "/manual/faq.html" %}
+	{% elsif page.url contains "/manual/faq.html" %}
 
 	{% endif %}
 	{% endif %}

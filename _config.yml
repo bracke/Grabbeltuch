@@ -4,7 +4,7 @@ description: ""
 keywords: ""
 future: true
 main_title: "Grabbeltuch"
-baseurl: ""
+baseurl: "https://grabbeltuch.com"
 source: .
 destination: ../GeneratedMetaSite
 include: ["scripts",".well-known","outdatedbrowser"]

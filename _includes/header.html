@@ -8,9 +8,9 @@
 {% endif %}
 </nav>
 <nav class="right">
-	<a class="button-clear" href="/login.html" style="color:white;">Login</a>
+	<a class="button-clear" href="{{ "/login.html" | prepend: site.baseurl_root }}" style="color:white;">Login</a>
 </nav>
 <header>
-<a href="/index.html"><h1>Grabbeltuch</h1></a>
+<a href="{{ "/index.html" | prepend: site.baseurl_root }}"><h1>Grabbeltuch</h1></a>
 <h2>Easy Productivity</h2>
 </header>

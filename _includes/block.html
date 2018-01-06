@@ -11,7 +11,7 @@
 
 			{% else %}
 
-				<a class="button-clear" href="{{include.link}}">Read more</a>
+				<a class="button-clear" href="{{ include.link | prepend: site.baseurl_root }}">Read more</a>
 
 			{% endif%}
 

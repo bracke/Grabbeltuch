@@ -35,17 +35,17 @@
 				<a href="https://www.youtube.com/channel/UCPVvRPiFsm6EYWmPA59OEoA" rel="noopener noreferrer" target="_blank">Videos</a>
 			</li>
 			<li>
-				<a href="/manual/introduction.html">Manual</a>
+				<a href="{{ "/manual/introduction.html" | prepend: site.baseurl_root }}">Manual</a>
 			</li>
 			<li>
-				<a href="/manual/faq.html">FAQ</a>
+				<a href="{{ "/manual/faq.html" | prepend: site.baseurl_root }}">FAQ</a>
 			</li>
 			<li>
-				<a href="/chat.html">Chat support</a>
+				<a href="{{ "/chat.html" | prepend: site.baseurl_root }}">Chat support</a>
 			</li>
 			<li>
 				<br />
-				<a title="Sitesearch" href="/search.html">
+				<a title="Sitesearch" href="{{ "/search.html" | prepend: site.baseurl_root }}">
 				 {% include icons/search-sm.html color="#fff" %}
 				</a>
 			</li>
@@ -55,9 +55,9 @@
 	<div>
 		<h3>News</h3>
 		<ul>
-			<li><a href="/blog.html">Blog</a></li>
-			<li><a href="/feeds/atomfeed.xml">Atom feed</a></li>
-			<li><a href="/feeds/xmlfeed.xml">RSS feed</a></li>
+			<li><a href="{{ "/blog.html" | prepend: site.baseurl_root }}">Blog</a></li>
+			<li><a href="{{ "/feeds/atomfeed.xml" | prepend: site.baseurl_root }}">Atom feed</a></li>
+			<li><a href="{{ "/feeds/xmlfeed.xml" | prepend: site.baseurl_root }}">RSS feed</a></li>
 		</ul>
 	</div>
 
@@ -65,14 +65,14 @@
 		<h3>Info</h3>
 		<ul>
 			<li>
-				<a href="/acknowledgements.html">Acknowledgements</a>
+				<a href="{{ "/acknowledgements.html" | prepend: site.baseurl_root }}">Acknowledgements</a>
 			</li>
-			<li><a href="/dataprotection.html">Dataprotection</a></li>
-			<li><a href="/impressum.html">Impressum</a></li>
+			<li><a href="{{ "/dataprotection.html" | prepend: site.baseurl_root }}">Dataprotection</a></li>
+			<li><a href="{{ "/impressum.html" | prepend: site.baseurl_root }}">Impressum</a></li>
 			<li>
-				<a href="/termsofservice.html">Terms of Service</a>
+				<a href="{{ "/termsofservice.html" | prepend: site.baseurl_root }}">Terms of Service</a>
 			</li>
-			<li><a href="/contact.html">Contact</a></li>
+			<li><a href="{{ "/contact.html" | prepend: site.baseurl_root }}">Contact</a></li>
 		</ul>
 		<br />
 		<span>&copy; {{ site.time | date: '%Y' }} Grabbeltuch</span>
