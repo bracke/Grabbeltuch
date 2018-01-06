@@ -1,0 +1,21 @@
+{
+	"name": "Grabbeltuch",
+	"short_name": "Grabbeltuch",
+	"description": "Easy productivity by integrating project management, timesheets, billing and much more into an easy to use complete package.",
+	"start_url": "/index.html",
+	"display": "standalone",
+	"background_color": "#ffa105",
+	"theme_color": "#ffa105",
+	"icons": [
+		{
+			"src": "/images/touch-icon-iphone-retina-120x120.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "/images/touch-icon-ipad-retina-152x152.png",
+			"sizes": "144x144",
+			"type": "image/png"
+		}
+	]
+}

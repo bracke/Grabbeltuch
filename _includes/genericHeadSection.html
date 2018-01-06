@@ -8,6 +8,7 @@
 {% else %}
 <meta name="keywords" content="{{site.keywords | join: ','}}" >
 {% endif %}
+<link rel="manifest" href="/manifest.webmanifest">
 <meta name="author" content="Grabbeltuch GmbH">
 <meta name="robots" content="noodp, noydir,{{page.index}}INDEX,{{page.follow}}FOLLOW" >
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
