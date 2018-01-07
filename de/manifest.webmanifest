@@ -8,13 +8,8 @@
 	"theme_color": "#ffa105",
 	"icons": [
 		{
-			"src": "/images/touch-icon-iphone-retina-120x120.png",
-			"sizes": "114x114",
-			"type": "image/png"
-		},
-		{
-			"src": "/images/touch-icon-ipad-retina-152x152.png",
-			"sizes": "144x144",
+			"src": "/images/appletouchlogo.png",
+			"sizes": "180x180",
 			"type": "image/png"
 		}
 	]
